@@ -29,24 +29,28 @@ body {
   background-color: $background-colour-light;
 }
 
+main {
+  @include main-font-stack;
+}
+
 
 //* Page Styles
 
-.cta-button {
+.cta-link {
   color: $font-colour-light;
-  background-color: $button-background-main;
+  background-color: $cta-link-background-main;
   border: 0;
   padding: 1.25rem 3.5rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
 }
 
 //* E-commerce Section
 
 .ecommerce-section {
   @include flex(column);
-  @include main-font-stack;
   align-items: center;
   position: relative;
   padding: 100px;
@@ -141,7 +145,7 @@ body {
   }
 }
 
-.package-card__cta-button {
+.package-card__cta-link {
   margin: 0 auto 2.9rem 0;
   font-size: $font-size-five;
 }
@@ -163,4 +167,12 @@ body {
     content: url("/images/tick.svg");
     nt-size: $font-size-six;
   }
+}
+
+//* Website Section
+
+.website-section {
+  background-color: $background-colour-main;
+  padding: 10rem 0;
+  color: $font-colour-light;
 }
