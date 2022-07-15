@@ -533,6 +533,15 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"8VGZO":[function(require,module,exports) {
 var _flickity = require("flickity");
+// ********** Flickity **********
+const carousel = document.querySelector(".website-section__carousel");
+const flkty = new _flickity(carousel, {
+    imagesLoaded: true,
+    autoPlay: 10000,
+    prevNextButtons: true,
+    wrapAround: true,
+    pageDots: false
+});
 
 },{"flickity":"38Yk4"}],"38Yk4":[function(require,module,exports) {
 /*!
