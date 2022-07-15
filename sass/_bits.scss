@@ -18,31 +18,32 @@
 
 //* Font Stacks
 @mixin heading-font-stack {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Ropa Sans', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 @mixin main-font-stack {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Ropa Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 
 //*=========================================
 //** Colours  **
 //*=========================================
 
-//  Background Colours
+//*  Background Colours
 $background-colour-light: #fff;
 $background-colour-main: #031A4A;
 $background-gradient-main: linear-gradient(145deg, #04216a 10%, #041947 90%);
 
-// Element Colours
+//* Element Colours
 $button-background-main: #0199FF;
 $badge-colour-main: #BF0000;
 
-//  Font Colours
+//*  Font Colours
 $font-colour-light: #FFFFFF;
 $font-colour-dark: #031A4A;
 $font-colour-emphasis: #BF0000;

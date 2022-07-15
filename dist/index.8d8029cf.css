@@ -18,6 +18,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 100px;
+  font-family: Ropa Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   display: flex;
   position: relative;
 }
@@ -33,11 +36,21 @@ body {
 .package-card {
   z-index: 1;
   background-color: #fff;
+  flex-direction: column;
+  padding: 2.5rem 3rem 0;
+  display: flex;
   position: relative;
 }
 
 .package-card:before {
   content: "2 MONTHS FREE";
+  display: none;
+}
+
+.package-card__heading {
+  margin: 0 auto 2.6rem;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .package-card__features-list-item::marker {
