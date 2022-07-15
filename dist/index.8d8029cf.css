@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: red;
+  font-family: futura-pt, sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=index.8d8029cf.css.map */

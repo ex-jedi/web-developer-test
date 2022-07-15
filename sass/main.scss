@@ -27,3 +27,9 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+h1 {
+  @include heading-font-stack;
+  font-size: 4rem;
+  color: #f00;
+}
