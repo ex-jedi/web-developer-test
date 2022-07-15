@@ -1,1 +1,1 @@
-console.log('Hello');
+import * as Flickity from 'flickity';
