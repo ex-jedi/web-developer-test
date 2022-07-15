@@ -18,13 +18,13 @@
 
 //* Font Stacks
 @mixin heading-font-stack {
-  font-family: 'futura-pt', sans-serif;
-  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
 @mixin main-font-stack {
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -33,13 +33,18 @@
 //** Colours  **
 //*=========================================
 
-//  Colours
-$background-colour-light: #f4f1f0;
-$background-colour-dark: #1f1f1f;
+//  Background Colours
+$background-colour-light: #fff;
+$background-colour-main: #031A4A;
+
+// Element Colours
+$button-background-main: #0199FF;
+$badge-colour-main: #BF0000;
 
 //  Font Colours
-$font-colour-light: #f4f1f0;
-$font-colour-dark: #252525;
+$font-colour-light: #FFFFFF;
+$font-colour-dark: #031A4A;
+$font-colour-emphasis: #BF0000;
 
 //*=========================================
 //** Media Queries   **
