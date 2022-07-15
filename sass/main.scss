@@ -47,25 +47,74 @@ body {
 
 .package-card {
   @include flex(column);
-  padding: 2.5rem 3rem 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2.5rem 3rem 4.4rem;
   position: relative;
+  color: $font-colour-dark;
   background-color: $background-colour-light;
+  border-radius: 1.5rem;
   z-index: 1;
 
   &::before {
     content: "2 MONTHS FREE";
     display: none;
   }
+
+  &:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
 }
 
 .package-card__heading {
   margin: 0 auto 2.6rem;
-  font-size: 2.5rem;
+  font-size: $font-size-three;
   font-weight: 400;
 }
 
+.package-card__sub-heading {
+  width: 100%;
+  font-size: $font-size-seven;
+  text-align: left;
+  margin: 0 auto 2rem;
+}
+
+.package-card__price {
+  font-size: $font-size-one;
+  margin: 0 auto 1.6rem 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: $font-colour-emphasis;
+}
+
+.package-card__price-info {
+  font-size: $font-size-seven;
+  margin: 0 auto 0.8rem 0;
+}
+
+.package-card__conditions-link {
+  color: inherit;
+  font-size: $font-size-eight;
+  margin: 0 auto 3.5rem 0;
+}
+
+
+.package-card__cta-button {
+  margin: 0 auto 2.9rem 0;
+  font-size: $font-size-five;
+}
+
+.package-card__features-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
 .package-card__features-list-item {
+  font-size: $font-size-six;
+  padding-left: 0.8rem;
+
   &::marker {
     content: url("/images/tick.svg");
+    nt-size: $font-size-six;
   }
 }
