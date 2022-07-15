@@ -69,7 +69,7 @@ body {
 .package-card__heading {
   margin: 0 auto 2.6rem;
   font-size: $font-size-three;
-  font-weight: 400;
+  font-weight: medium;
 }
 
 .package-card__sub-heading {
@@ -98,10 +98,18 @@ body {
   margin: 0 auto 3.5rem 0;
 }
 
-
 .package-card__cta-button {
   margin: 0 auto 2.9rem 0;
   font-size: $font-size-five;
+}
+
+.cta-button {
+  color: $font-colour-light;
+  background-color: $button-background-main;
+  border: 0;
+  padding: 1.25rem 3.5rem;
+  border-radius: 1.2rem;
+  text-transform: uppercase;
 }
 
 .package-card__features-list {
@@ -112,6 +120,10 @@ body {
 .package-card__features-list-item {
   font-size: $font-size-six;
   padding-left: 0.8rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
 
   &::marker {
     content: url("/images/tick.svg");
