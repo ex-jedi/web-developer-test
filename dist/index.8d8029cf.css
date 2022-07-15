@@ -159,9 +159,14 @@ main {
   padding: 10rem 0;
 }
 
-.carousel-image {
+.website-section__carousel-cell {
   width: 100%;
   height: auto;
+  position: absolute;
+}
+
+img {
+  display: block;
 }
 
 .flickity-enabled {
