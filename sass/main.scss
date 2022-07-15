@@ -28,8 +28,15 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  @include heading-font-stack;
-  font-size: 4rem;
-  color: #f00;
+.package-card {
+
+  &::before {
+    content: "2 MONTHS FREE";
+  }
+}
+
+.package-card__features-list-item {
+  &::marker {
+    content: url("/images/tick.svg");
+  }
 }

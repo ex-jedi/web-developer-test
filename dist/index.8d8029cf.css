@@ -14,12 +14,12 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  color: red;
-  font-family: Barlow Condensed, sans-serif;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 600;
+.package-card:before {
+  content: "2 MONTHS FREE";
+}
+
+.package-card__features-list-item::marker {
+  content: url("tick.678a6c7b.svg");
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
