@@ -28,7 +28,25 @@ body {
   overflow-x: hidden;
 }
 
+.ecommerce-section {
+  @include flex(column);
+  align-items: center;
+  position: relative;
+  padding: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $background-gradient-main;
+    border-radius: 3rem;
+  }
+}
+
 .package-card {
+  position: relative;
+  background-color: $background-colour-light;
+  z-index: 1;
 
   &::before {
     content: "2 MONTHS FREE";

@@ -14,6 +14,28 @@ body {
   overflow-x: hidden;
 }
 
+.ecommerce-section {
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  display: flex;
+  position: relative;
+}
+
+.ecommerce-section:before {
+  content: "";
+  background: linear-gradient(145deg, #04216a 10%, #041947 90%);
+  border-radius: 3rem;
+  position: absolute;
+  inset: 0;
+}
+
+.package-card {
+  z-index: 1;
+  background-color: #fff;
+  position: relative;
+}
+
 .package-card:before {
   content: "2 MONTHS FREE";
 }
