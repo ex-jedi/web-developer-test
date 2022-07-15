@@ -109,6 +109,20 @@ body {
   color: inherit;
   font-size: $font-size-eight;
   margin: 0 auto 3.5rem 0;
+
+  &:after {
+    content: "?";
+    position: relative;
+    top: 1px;
+    left: 2rem;
+    display: inline-block;
+    border: 1px solid $border-colour-dark;
+    text-align: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: $font-size-eight;
+    border-radius: 1rem;
+  }
 }
 
 .package-card__cta-button {
@@ -123,6 +137,7 @@ body {
   padding: 1.25rem 3.5rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .package-card__features-list {

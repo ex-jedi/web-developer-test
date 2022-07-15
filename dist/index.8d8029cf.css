@@ -99,6 +99,20 @@ body {
   font-size: 1.3rem;
 }
 
+.package-card__conditions-link:after {
+  content: "?";
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #031a4a;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 2rem;
+}
+
 .package-card__cta-button {
   margin: 0 auto 2.9rem 0;
   font-size: 1.8rem;
@@ -107,6 +121,7 @@ body {
 .cta-button {
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
   background-color: #0199ff;
   border: 0;
   border-radius: .5rem;
