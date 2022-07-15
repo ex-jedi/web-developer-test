@@ -42,6 +42,7 @@ body {
     inset: 0;
     background: $background-gradient-main;
     border-radius: 3rem;
+    z-index: -10;
   }
 }
 
@@ -53,16 +54,28 @@ body {
   position: relative;
   color: $font-colour-dark;
   background-color: $background-colour-light;
-  border-radius: 1.5rem;
-  z-index: 1;
+  border-radius: 1rem;
+  // z-index: 1;
 
   &::before {
     content: "2 MONTHS FREE";
-    display: none;
+    position: absolute;
+    font-size: $font-size-six;
+    background-color: $badge-colour-main;
+    color: $font-colour-light;
+    width: 90%;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-align: center;
+    font-weight: normal;
+    top: -4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
   }
 
   &:not(:last-of-type) {
-    margin-bottom: 4rem;
+    margin-bottom: calc(4rem + 48px);
   }
 }
 
@@ -108,7 +121,7 @@ body {
   background-color: $button-background-main;
   border: 0;
   padding: 1.25rem 3.5rem;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   text-transform: uppercase;
 }
 

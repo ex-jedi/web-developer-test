@@ -27,6 +27,7 @@ body {
 
 .ecommerce-section:before {
   content: "";
+  z-index: -10;
   background: linear-gradient(145deg, #04216a 10%, #041947 90%);
   border-radius: 3rem;
   position: absolute;
@@ -35,9 +36,8 @@ body {
 
 .package-card {
   color: #031a4a;
-  z-index: 1;
   background-color: #fff;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -48,11 +48,23 @@ body {
 
 .package-card:before {
   content: "2 MONTHS FREE";
-  display: none;
+  color: #fff;
+  width: 90%;
+  text-align: center;
+  z-index: -1;
+  background-color: #bf0000;
+  border-radius: .5rem .5rem 0 0;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  position: absolute;
+  top: -4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .package-card:not(:last-of-type) {
-  margin-bottom: 4rem;
+  margin-bottom: calc(4rem + 48px);
 }
 
 .package-card__heading {
@@ -97,7 +109,7 @@ body {
   text-transform: uppercase;
   background-color: #0199ff;
   border: 0;
-  border-radius: 1.2rem;
+  border-radius: .5rem;
   padding: 1.25rem 3.5rem;
 }
 
