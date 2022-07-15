@@ -26,15 +26,31 @@ body {
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
+  background-color: $background-colour-light;
 }
+
+
+//* Page Styles
+
+.cta-button {
+  color: $font-colour-light;
+  background-color: $button-background-main;
+  border: 0;
+  padding: 1.25rem 3.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+//* E-commerce Section
 
 .ecommerce-section {
   @include flex(column);
   @include main-font-stack;
-
   align-items: center;
   position: relative;
   padding: 100px;
+  margin-bottom: 10rem;
 
   &::before {
     content: "";
@@ -128,16 +144,6 @@ body {
 .package-card__cta-button {
   margin: 0 auto 2.9rem 0;
   font-size: $font-size-five;
-}
-
-.cta-button {
-  color: $font-colour-light;
-  background-color: $button-background-main;
-  border: 0;
-  padding: 1.25rem 3.5rem;
-  border-radius: 0.5rem;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .package-card__features-list {

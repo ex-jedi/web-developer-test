@@ -9,14 +9,26 @@ html {
 }
 
 body {
+  background-color: #fff;
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
 }
 
+.cta-button {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #0199ff;
+  border: 0;
+  border-radius: .5rem;
+  padding: 1.25rem 3.5rem;
+}
+
 .ecommerce-section {
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10rem;
   padding: 100px;
   font-family: Ropa Sans, sans-serif;
   font-style: normal;
@@ -116,16 +128,6 @@ body {
 .package-card__cta-button {
   margin: 0 auto 2.9rem 0;
   font-size: 1.8rem;
-}
-
-.cta-button {
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: #0199ff;
-  border: 0;
-  border-radius: .5rem;
-  padding: 1.25rem 3.5rem;
 }
 
 .package-card__features-list {
