@@ -185,16 +185,24 @@ main {
 
 .package-card {
   color: #031a4a;
+  z-index: 1;
   background-color: #fff;
+  border: .2rem solid #fff;
   border-radius: 1rem;
   flex-direction: column;
   flex: 0 300px;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 2.5rem 3rem 4.4rem;
+  transition: all .3s ease-in-out;
   display: flex;
   position: relative;
   box-shadow: -2px 1px 9px #0000001f;
+}
+
+.package-card:hover {
+  border: .2rem solid #1473e6;
+  transform: translateY(-.5rem);
 }
 
 .package-card:before {
@@ -205,7 +213,7 @@ main {
   z-index: -1;
   background-color: #bf0000;
   border-radius: .5rem .5rem 0 0;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem 1rem;
   font-size: 1.6rem;
   font-weight: normal;
   position: absolute;
@@ -281,7 +289,7 @@ main {
 
 .package-card__features-list-item::marker {
   content: url("tick.678a6c7b.svg");
-  nt-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .website-section {
