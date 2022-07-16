@@ -71,8 +71,12 @@ main {
   @include min-breakpoint(800) {
     @include flex(row);
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     column-gap: 3rem;
+  }
+
+  @include min-breakpoint(900) {
+    padding: 10rem;
   }
 }
 

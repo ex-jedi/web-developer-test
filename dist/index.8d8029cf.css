@@ -156,9 +156,15 @@ main {
 @media (min-width: 800px) {
   .ecommerce-section {
     flex-flow: wrap;
-    justify-content: space-around;
+    justify-content: center;
     column-gap: 3rem;
     display: flex;
+  }
+}
+
+@media (min-width: 900px) {
+  .ecommerce-section {
+    padding: 10rem;
   }
 }
 
