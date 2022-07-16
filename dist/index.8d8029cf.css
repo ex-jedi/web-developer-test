@@ -298,6 +298,11 @@ main {
   padding: 10rem 0;
 }
 
+.website-section__text-wrapper {
+  margin-bottom: 6.4rem;
+  padding: 0 5rem;
+}
+
 .website-section__heading {
   text-align: center;
   margin: 0 auto 3rem;
@@ -323,7 +328,7 @@ main {
   width: fit-content;
   text-transform: uppercase;
   background-color: #4192df;
-  margin: 0 auto 6.4rem;
+  margin: 0 auto;
   font-size: 1.6rem;
   display: block;
 }

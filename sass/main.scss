@@ -214,6 +214,11 @@ main {
   color: $font-colour-light;
 }
 
+.website-section__text-wrapper {
+  margin-bottom: 6.4rem;
+  padding: 0 5rem;
+}
+
 .website-section__heading {
   font-size: $font-size-four;
   font-weight: normal;
@@ -241,7 +246,7 @@ main {
   font-size: $font-size-six;
   background-color: $cta-link-background-two;
   text-transform: uppercase;
-  margin: 0 auto 6.4rem;
+  margin: 0 auto;
 }
 
 .website-section__carousel {
