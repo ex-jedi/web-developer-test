@@ -178,6 +178,10 @@ main {
   color: $font-colour-light;
 }
 
+.website-section__carousel {
+  margin-bottom: 3.6rem;
+}
+
 .website-section__carousel-cell {
   margin: 0 3rem;
 }
@@ -187,5 +191,25 @@ main {
 }
 
 .website-section__carousel-buttons-wrapper {
-  margin-top: 4rem;
+  @include flex(row);
+  justify-content: center;
+  column-gap: 3.2rem;
+  align-items: center;
+}
+
+.website-section__carousel-buttons {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0;
+}
+
+.website-section__carousel-buttons--previous {
+  background-image: url('/images/left-arrow.svg');
+}
+
+.website-section__carousel-buttons--next {
+  background-image: url('/images/right-arrow.svg');
 }

@@ -260,6 +260,10 @@ main {
   padding: 10rem 0;
 }
 
+.website-section__carousel {
+  margin-bottom: 3.6rem;
+}
+
 .website-section__carousel-cell {
   margin: 0 3rem;
 }
@@ -269,7 +273,28 @@ main {
 }
 
 .website-section__carousel-buttons-wrapper {
-  margin-top: 4rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3.2rem;
+  display: flex;
+}
+
+.website-section__carousel-buttons {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #0000;
+  background-repeat: no-repeat;
+  border: 0;
+  padding: 0;
+}
+
+.website-section__carousel-buttons--previous {
+  background-image: url("left-arrow.ea00f6cd.svg");
+}
+
+.website-section__carousel-buttons--next {
+  background-image: url("right-arrow.6c93696b.svg");
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
