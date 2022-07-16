@@ -168,6 +168,17 @@ main {
   }
 }
 
+@media (min-width: 1507px) {
+  .ecommerce-section:before {
+    content: "";
+    z-index: -10;
+    background: linear-gradient(145deg, #04216a 10%, #041947 90%);
+    border-radius: 3rem;
+    position: absolute;
+    inset: 37% 0 0;
+  }
+}
+
 .package-card {
   color: #031a4a;
   background-color: #fff;
@@ -179,6 +190,7 @@ main {
   padding: 2.5rem 3rem 4.4rem;
   display: flex;
   position: relative;
+  box-shadow: -2px 1px 9px #0000001f;
 }
 
 .package-card:before {
