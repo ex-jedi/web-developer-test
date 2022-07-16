@@ -42,6 +42,8 @@ main {
 
 .cta-link {
   color: $font-colour-light;
+  font-weight: 300;
+  letter-spacing: 0.4px;
   background-color: $cta-link-background-main;
   border: 0;
   padding: 1.25rem 3.5rem;
@@ -49,6 +51,12 @@ main {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $cta-link-background-hover;
+    transform: translateY(0.2rem);
+  }
 }
 
 //* E-commerce Section
@@ -120,13 +128,13 @@ main {
     content: "2 MONTHS FREE";
     position: absolute;
     font-size: $font-size-six;
+    font-weight: 300;
     background-color: $badge-colour-main;
     color: $font-colour-light;
     width: 90%;
-    padding: 1.5rem 3rem 1rem;
+    padding: 1.5rem 3rem 0.9rem;
     border-radius: 0.5rem 0.5rem 0 0;
     text-align: center;
-    font-weight: normal;
     top: -4.5rem;
     left: 50%;
     transform: translateX(-50%);
@@ -139,19 +147,20 @@ main {
 .package-card__heading {
   margin: 0 auto 2.6rem;
   font-size: $font-size-three;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .package-card__sub-heading {
   width: 100%;
   font-size: $font-size-seven;
   text-align: left;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
 }
 
 .package-card__price {
   font-size: $font-size-one;
   margin: 0 auto 1.6rem 0;
+  letter-spacing: -.9px;
   text-align: left;
   text-transform: uppercase;
   color: $font-colour-emphasis;
@@ -221,7 +230,7 @@ main {
 
 .website-section__heading {
   font-size: $font-size-four;
-  font-weight: normal;
+  font-weight: 300;
   text-align: center;
   margin: 0 auto 3rem;
 }
@@ -236,6 +245,7 @@ main {
   font-size: $font-size-five;
   text-align: center;
   line-height: 3.2rem;
+  font-weight: 100;
   width: min(100%, 1000px);
   margin: 0 auto 4rem;
 }
