@@ -54,7 +54,7 @@ main {
   @include flex(column);
   align-items: center;
   position: relative;
-  padding: 100px;
+  padding: 100px 50px;
   margin-bottom: 10rem;
 
   &::before {
@@ -65,7 +65,15 @@ main {
     border-radius: 3rem;
     z-index: -10;
   }
+
+  @include min-breakpoint(800) {
+    @include flex(row);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 3rem;
+  }
 }
+
 
 .package-card {
   @include flex(column);
@@ -76,7 +84,7 @@ main {
   color: $font-colour-dark;
   background-color: $background-colour-light;
   border-radius: 1rem;
-  // z-index: 1;
+  flex: 0 1 300px;
 
   &::before {
     content: "2 MONTHS FREE";
