@@ -28,6 +28,7 @@ body {
   position: relative;
   overflow-x: hidden;
   background-color: $background-colour-light;
+  min-width: 320px;
 }
 
 main {
@@ -54,8 +55,9 @@ main {
   @include flex(column);
   align-items: center;
   position: relative;
-  padding: 100px 50px;
+  padding: 10rem 5rem;
   margin-bottom: 10rem;
+  row-gap: calc(4rem + 48px);
 
   &::before {
     content: "";
@@ -69,7 +71,7 @@ main {
   @include min-breakpoint(800) {
     @include flex(row);
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 3rem;
   }
 }
@@ -103,9 +105,7 @@ main {
     z-index: -1;
   }
 
-  &:not(:last-of-type) {
-    margin-bottom: calc(4rem + 48px);
-  }
+
 }
 
 .package-card__heading {

@@ -110,6 +110,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   background-color: #fff;
   margin: 0 auto;
   position: relative;
@@ -136,8 +137,9 @@ main {
 .ecommerce-section {
   flex-direction: column;
   align-items: center;
+  row-gap: calc(4rem + 48px);
   margin-bottom: 10rem;
-  padding: 100px 50px;
+  padding: 10rem 5rem;
   display: flex;
   position: relative;
 }
@@ -154,7 +156,7 @@ main {
 @media (min-width: 800px) {
   .ecommerce-section {
     flex-flow: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 3rem;
     display: flex;
   }
@@ -188,10 +190,6 @@ main {
   top: -4.5rem;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.package-card:not(:last-of-type) {
-  margin-bottom: calc(4rem + 48px);
 }
 
 .package-card__heading {
