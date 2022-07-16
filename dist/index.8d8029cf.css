@@ -270,6 +270,7 @@ main {
 
 .website-section__carousel-image {
   width: min(100%, 400px);
+  border-radius: 2rem;
 }
 
 .website-section__carousel-buttons-wrapper {
