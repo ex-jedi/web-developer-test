@@ -118,6 +118,8 @@ body {
 }
 
 main {
+  max-width: 200rem;
+  margin: 0 auto;
   font-family: Ropa Sans, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -160,22 +162,24 @@ main {
     column-gap: 3rem;
     display: flex;
   }
+
+  .ecommerce-section:before {
+    content: "";
+    height: calc(100% - 25rem);
+    top: unset;
+    z-index: -10;
+    background: linear-gradient(145deg, #04216a 10%, #041947 90%);
+    border-radius: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 @media (min-width: 900px) {
   .ecommerce-section {
     padding: 10rem;
-  }
-}
-
-@media (min-width: 1507px) {
-  .ecommerce-section:before {
-    content: "";
-    z-index: -10;
-    background: linear-gradient(145deg, #04216a 10%, #041947 90%);
-    border-radius: 3rem;
-    position: absolute;
-    inset: 37% 0 0;
   }
 }
 
