@@ -179,5 +179,13 @@ main {
 }
 
 .website-section__carousel-cell {
-  margin: 0 4rem;
+  margin: 0 3rem;
+}
+
+.website-section__carousel-image {
+  width: min(100%, 400px);
+}
+
+.website-section__carousel-buttons-wrapper {
+  margin-top: 4rem;
 }
