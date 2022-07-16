@@ -260,6 +260,36 @@ main {
   padding: 10rem 0;
 }
 
+.website-section__heading {
+  text-align: center;
+  margin: 0 auto 3rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.website-section__strapline {
+  text-align: center;
+  margin: 0 auto 3.5rem;
+  font-size: 3.5rem;
+}
+
+.website-section__text {
+  text-align: center;
+  width: min(100%, 1000px);
+  margin: 0 auto 4rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.website-section__cta-link {
+  width: fit-content;
+  text-transform: uppercase;
+  background-color: #4192df;
+  margin: 0 auto 6.4rem;
+  font-size: 1.6rem;
+  display: block;
+}
+
 .website-section__carousel {
   margin-bottom: 3.6rem;
 }

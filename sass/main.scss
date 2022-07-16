@@ -178,6 +178,36 @@ main {
   color: $font-colour-light;
 }
 
+.website-section__heading {
+  font-size: $font-size-four;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto 3rem;
+}
+
+.website-section__strapline {
+  font-size: $font-size-two;
+  text-align: center;
+  margin: 0 auto 3.5rem;
+}
+
+.website-section__text {
+  font-size: $font-size-five;
+  text-align: center;
+  line-height: 3.2rem;
+  width: min(100%, 1000px);
+  margin: 0 auto 4rem;
+}
+
+.website-section__cta-link {
+  display: block;
+  width: fit-content;
+  font-size: $font-size-six;
+  background-color: $cta-link-background-two;
+  text-transform: uppercase;
+  margin: 0 auto 6.4rem;
+}
+
 .website-section__carousel {
   margin-bottom: 3.6rem;
 }
