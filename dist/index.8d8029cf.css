@@ -131,7 +131,7 @@ main {
   flex: 0 300px;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2.5rem 3rem 4.4rem;
+  padding: 2.5rem 2rem 4.4rem;
   transition: all .3s ease-in-out;
   display: flex;
   position: relative;
@@ -160,8 +160,14 @@ main {
   transform: translateX(-50%);
 }
 
+@media (min-width: 400px) {
+  .package-card {
+    padding: 2.5rem 2.7rem 4.4rem 3rem;
+  }
+}
+
 .package-card__heading {
-  margin: 0 auto 2.6rem;
+  margin: 0 auto 2.6rem 0;
   font-size: 2.5rem;
   font-weight: 500;
 }
