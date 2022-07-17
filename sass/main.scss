@@ -88,7 +88,7 @@ main {
     &::before {
       content: "";
       position: absolute;
-      height: calc(100% - 26rem);
+      height: calc(100% - 25.5rem);
       top: unset;
       bottom: 0;
       left: 0;
@@ -226,7 +226,11 @@ main {
 
 .website-section__text-wrapper {
   margin-bottom: 6.4rem;
-  padding: 0 5rem;
+  padding: 0 2rem;
+
+  @include min-breakpoint(800) {
+    padding: 0 5rem;
+  }
 }
 
 .website-section__heading {
