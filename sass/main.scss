@@ -37,7 +37,9 @@ main {
 }
 
 
-//* Page Styles
+//*=========================================
+//** Section Styles **
+//*=========================================
 
 .cta-link {
   color: $font-colour-light;
@@ -58,7 +60,8 @@ main {
   }
 }
 
-//* E-commerce Section
+
+//********** E-commerce Section **********
 
 .ecommerce-section {
   @include flex(column);
@@ -74,8 +77,7 @@ main {
     position: absolute;
     inset: 0;
     background: $background-gradient-main;
-    border-radius: 3rem;
-    z-index: -10;
+    border-radius: 1rem;
   }
 
   @include min-breakpoint(800) {
@@ -86,16 +88,11 @@ main {
     padding: 10rem 5rem;
 
     &::before {
-      content: "";
-      position: absolute;
       height: calc(100% - 25.5rem);
       top: unset;
       bottom: 0;
       left: 0;
       right: 0;
-      background: $background-gradient-main;
-      border-radius: 3rem;
-      z-index: -10;
     }
   }
 
@@ -104,12 +101,11 @@ main {
   }
 }
 
-
 .package-card {
   @include flex(column);
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2.5rem 3rem 4.4rem;
+  padding: 2.5rem 2rem 4.4rem;
   position: relative;
   color: $font-colour-dark;
   background-color: $background-colour-light;
@@ -142,11 +138,13 @@ main {
     z-index: -1;
   }
 
-
+  @include min-breakpoint(400) {
+    padding: 2.5rem 2.7rem 4.4rem 3rem;
+  }
 }
 
 .package-card__heading {
-  margin: 0 auto 2.6rem;
+  margin: 0 auto 2.6rem 0;
   font-size: $font-size-three;
   font-weight: 500;
 }
@@ -216,7 +214,8 @@ main {
   }
 }
 
-//* Website Section
+
+//********** Website Templates Section **********
 
 .website-section {
   background-color: $background-colour-main;
@@ -250,7 +249,7 @@ main {
   font-size: $font-size-five;
   text-align: center;
   line-height: 3.2rem;
-  font-weight: 100;
+  font-weight: 300;
   width: min(100%, 1000px);
   margin: 0 auto 4rem;
 }

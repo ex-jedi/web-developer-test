@@ -91,9 +91,8 @@ main {
 
 .ecommerce-section:before {
   content: "";
-  z-index: -10;
   background: linear-gradient(145deg, #04216a 10%, #041947 90%);
-  border-radius: 3rem;
+  border-radius: 1rem;
   position: absolute;
   inset: 0;
 }
@@ -108,13 +107,8 @@ main {
   }
 
   .ecommerce-section:before {
-    content: "";
     height: calc(100% - 25.5rem);
     top: unset;
-    z-index: -10;
-    background: linear-gradient(145deg, #04216a 10%, #041947 90%);
-    border-radius: 3rem;
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -137,7 +131,7 @@ main {
   flex: 0 300px;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2.5rem 3rem 4.4rem;
+  padding: 2.5rem 2rem 4.4rem;
   transition: all .3s ease-in-out;
   display: flex;
   position: relative;
@@ -166,8 +160,14 @@ main {
   transform: translateX(-50%);
 }
 
+@media (min-width: 400px) {
+  .package-card {
+    padding: 2.5rem 2.7rem 4.4rem 3rem;
+  }
+}
+
 .package-card__heading {
-  margin: 0 auto 2.6rem;
+  margin: 0 auto 2.6rem 0;
   font-size: 2.5rem;
   font-weight: 500;
 }
@@ -272,7 +272,7 @@ main {
   width: min(100%, 1000px);
   margin: 0 auto 4rem;
   font-size: 1.8rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 3.2rem;
 }
 
