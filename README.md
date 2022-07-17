@@ -1,10 +1,8 @@
 # Web Developer Test
 
-Hi, and thanks for your time.
+Hi
 
- I've used [Parcel](https://parceljs.org/) task runner for this test. The relevant dependencies are in the `package.json` file. Fork or clone the `main` branch, open a terminal in the root directory and run `npm install` to install them. Then run `npm start` to spin up Parcel. A `localhost` URL for a development server will then be shown in the terminal.
-
-I've included the `dist` folder in case you wanted to see the compiled assets.
+ I've used [Parcel](https://parceljs.org/) task runner for this test. Clone the `main` branch, open a terminal in the root directory and run `npm install` to install relevant dependencies. Then run `npm start` to spin up Parcel, a `localhost` URL for a development server will then be shown in the terminal.
 
 In my day to day work I usually use [Prepros](https://prepros.io/), but I've used Parcel here as it's better for portability.
 
