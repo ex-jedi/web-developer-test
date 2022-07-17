@@ -53,7 +53,6 @@ body {
 }
 
 main {
-  max-width: 200rem;
   margin: 0 auto;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -80,10 +79,11 @@ main {
 }
 
 .ecommerce-section {
+  max-width: 160rem;
   flex-direction: column;
   align-items: center;
   row-gap: calc(4rem + 48px);
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem;
   padding: 10rem 5rem;
   display: flex;
   position: relative;
