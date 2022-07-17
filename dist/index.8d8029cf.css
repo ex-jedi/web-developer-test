@@ -84,7 +84,7 @@ main {
   align-items: center;
   row-gap: calc(4rem + 48px);
   margin: 0 auto 10rem;
-  padding: 10rem 5rem;
+  padding: 10rem 2rem;
   display: flex;
   position: relative;
 }
@@ -103,12 +103,13 @@ main {
     flex-flow: wrap;
     justify-content: center;
     column-gap: 3rem;
+    padding: 10rem 5rem;
     display: flex;
   }
 
   .ecommerce-section:before {
     content: "";
-    height: calc(100% - 25rem);
+    height: calc(100% - 26rem);
     top: unset;
     z-index: -10;
     background: linear-gradient(145deg, #04216a 10%, #041947 90%);
