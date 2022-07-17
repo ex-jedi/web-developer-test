@@ -74,8 +74,7 @@ main {
     position: absolute;
     inset: 0;
     background: $background-gradient-main;
-    border-radius: 3rem;
-    z-index: -10;
+    border-radius: 1rem;
   }
 
   @include min-breakpoint(800) {
@@ -86,16 +85,11 @@ main {
     padding: 10rem 5rem;
 
     &::before {
-      content: "";
-      position: absolute;
       height: calc(100% - 25.5rem);
       top: unset;
       bottom: 0;
       left: 0;
       right: 0;
-      background: $background-gradient-main;
-      border-radius: 3rem;
-      z-index: -10;
     }
   }
 
