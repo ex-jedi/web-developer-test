@@ -33,7 +33,6 @@ body {
 
 main {
   @include main-font-stack;
-  max-width: 200rem;
   margin: 0 auto;
 }
 
@@ -65,9 +64,10 @@ main {
   @include flex(column);
   align-items: center;
   position: relative;
-  padding: 10rem 5rem;
-  margin-bottom: 10rem;
+  padding: 10rem 2rem;
+  margin: 0 auto 10rem;
   row-gap: calc(4rem + 48px);
+  max-width: 160rem;
 
   &::before {
     content: "";
@@ -83,11 +83,12 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 3rem;
+    padding: 10rem 5rem;
 
     &::before {
       content: "";
       position: absolute;
-      height: calc(100% - 25rem);
+      height: calc(100% - 25.5rem);
       top: unset;
       bottom: 0;
       left: 0;
@@ -225,7 +226,11 @@ main {
 
 .website-section__text-wrapper {
   margin-bottom: 6.4rem;
-  padding: 0 5rem;
+  padding: 0 2rem;
+
+  @include min-breakpoint(800) {
+    padding: 0 5rem;
+  }
 }
 
 .website-section__heading {
@@ -279,19 +284,25 @@ main {
   align-items: center;
 }
 
-.website-section__carousel-buttons {
+.website-section__carousel-button {
   background-color: transparent;
   background-repeat: no-repeat;
   border: 0;
   width: 4.5rem;
   height: 4.5rem;
   padding: 0;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
-.website-section__carousel-buttons--previous {
+.website-section__carousel-button--previous {
   background-image: url('/images/left-arrow.svg');
 }
 
-.website-section__carousel-buttons--next {
+.website-section__carousel-button--next {
   background-image: url('/images/right-arrow.svg');
 }

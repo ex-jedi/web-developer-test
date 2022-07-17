@@ -6,12 +6,12 @@ const flkty = new Flickity(carousel, {
     prevNextButtons: false
 });
 // Flickity previous button
-const previousButton = document.querySelector(".website-section__carousel-buttons--previous");
+const previousButton = document.querySelector(".website-section__carousel-button--previous");
 previousButton.addEventListener("click", ()=>{
     flkty.previous();
 });
 // Flickity next button
-const nextButton = document.querySelector(".website-section__carousel-buttons--next");
+const nextButton = document.querySelector(".website-section__carousel-button--next");
 nextButton.addEventListener("click", ()=>{
     flkty.next();
 });

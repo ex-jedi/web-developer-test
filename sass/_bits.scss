@@ -60,20 +60,6 @@ $font-colour-emphasis: #BF0000;
 //** Media Queries   **
 //*=========================================
 
-//TODO: Delete unused media queries
-
-//********** Max Width **********
-
-@mixin breakpoint($point) {
-  @if unitless($point) {
-    $point: 1px * $point;
-  }
-
-  @media (max-width: $point) {
-    @content;
-  }
-}
-
 //********** Min Width **********
 
 @mixin min-breakpoint($point) {
@@ -82,30 +68,6 @@ $font-colour-emphasis: #BF0000;
   }
 
   @media (min-width: $point) {
-    @content;
-  }
-}
-
-//********** Height **********
-
-@mixin height-breakpoint($point) {
-  @if unitless($point) {
-    $point: 1px * $point;
-  }
-
-  @media (max-height: $point) {
-    @content;
-  }
-}
-
-//********** Width and Orientation **********
-
-@mixin width-orientation-breakpoint($point, $orientation: portrait) {
-  @if unitless($point) {
-    $point: 1px * $point;
-  }
-
-  @media (max-height: $point) and (orientation: $orientation) {
     @content;
   }
 }
