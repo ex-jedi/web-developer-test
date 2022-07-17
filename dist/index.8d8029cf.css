@@ -299,7 +299,7 @@ main {
   display: flex;
 }
 
-.website-section__carousel-buttons {
+.website-section__carousel-button {
   width: 4.5rem;
   height: 4.5rem;
   background-color: #0000;
@@ -308,11 +308,11 @@ main {
   padding: 0;
 }
 
-.website-section__carousel-buttons--previous {
+.website-section__carousel-button--previous {
   background-image: url("left-arrow.ea00f6cd.svg");
 }
 
-.website-section__carousel-buttons--next {
+.website-section__carousel-button--next {
   background-image: url("right-arrow.6c93696b.svg");
 }
 

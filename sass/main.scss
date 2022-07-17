@@ -279,7 +279,7 @@ main {
   align-items: center;
 }
 
-.website-section__carousel-buttons {
+.website-section__carousel-button {
   background-color: transparent;
   background-repeat: no-repeat;
   border: 0;
@@ -288,10 +288,10 @@ main {
   padding: 0;
 }
 
-.website-section__carousel-buttons--previous {
+.website-section__carousel-button--previous {
   background-image: url('/images/left-arrow.svg');
 }
 
-.website-section__carousel-buttons--next {
+.website-section__carousel-button--next {
   background-image: url('/images/right-arrow.svg');
 }
