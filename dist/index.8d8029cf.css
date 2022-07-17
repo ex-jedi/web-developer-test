@@ -60,8 +60,8 @@ main {
 }
 
 .cta-link {
-  color: #fff;
   letter-spacing: .4px;
+  color: #fff;
   text-transform: uppercase;
   cursor: pointer;
   background-color: #0199ff;
@@ -135,7 +135,7 @@ main {
   transition: all .3s ease-in-out;
   display: flex;
   position: relative;
-  box-shadow: -2px 1px 9px #0000001f;
+  box-shadow: -.2rem .1rem 1rem #0000001f;
 }
 
 .package-card:hover {
