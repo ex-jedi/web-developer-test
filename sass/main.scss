@@ -37,7 +37,9 @@ main {
 }
 
 
-//* Page Styles
+//*=========================================
+//** Section Styles **
+//*=========================================
 
 .cta-link {
   color: $font-colour-light;
@@ -58,7 +60,8 @@ main {
   }
 }
 
-//* E-commerce Section
+
+//********** E-commerce Section **********
 
 .ecommerce-section {
   @include flex(column);
@@ -98,7 +101,6 @@ main {
   }
 }
 
-
 .package-card {
   @include flex(column);
   justify-content: flex-start;
@@ -135,8 +137,6 @@ main {
     transform: translateX(-50%);
     z-index: -1;
   }
-
-
 }
 
 .package-card__heading {
@@ -210,7 +210,8 @@ main {
   }
 }
 
-//* Website Section
+
+//********** Website Templates Section **********
 
 .website-section {
   background-color: $background-colour-main;
