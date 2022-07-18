@@ -295,6 +295,8 @@ main {
 
 .website-section__carousel-image {
   width: min(100%, 400px);
+  height: auto;
+  object-fit: cover;
   border-radius: 2rem;
 }
 
