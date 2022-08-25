@@ -20,6 +20,7 @@
 
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -277,6 +278,7 @@ main {
 }
 
 .website-section__cta-link {
+  width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
   background-color: #4192df;
